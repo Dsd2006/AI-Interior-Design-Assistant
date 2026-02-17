@@ -1,0 +1,78 @@
+{
+  "name": "DesignProject",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Project name"
+    },
+    "room_type": {
+      "type": "string",
+      "enum": [
+        "living_room",
+        "bedroom",
+        "kitchen",
+        "bathroom",
+        "dining_room",
+        "office",
+        "outdoor"
+      ],
+      "description": "Type of room"
+    },
+    "style": {
+      "type": "string",
+      "enum": [
+        "modern",
+        "minimalist",
+        "scandinavian",
+        "industrial",
+        "bohemian",
+        "traditional",
+        "coastal",
+        "mid_century"
+      ],
+      "description": "Design style"
+    },
+    "budget": {
+      "type": "string",
+      "enum": [
+        "budget_friendly",
+        "moderate",
+        "luxury"
+      ],
+      "description": "Budget range"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Uploaded room image"
+    },
+    "color_palette": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Selected color palette"
+    },
+    "ai_suggestions": {
+      "type": "string",
+      "description": "AI-generated design suggestions"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in_progress",
+        "completed"
+      ],
+      "default": "draft"
+    }
+  },
+  "required": [
+    "name",
+    "room_type"
+  ]
+}
