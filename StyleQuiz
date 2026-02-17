@@ -1,0 +1,32 @@
+{
+  "name": "StyleQuizResult",
+  "type": "object",
+  "properties": {
+    "primary_style": {
+      "type": "string",
+      "description": "Main design style"
+    },
+    "secondary_style": {
+      "type": "string",
+      "description": "Secondary design style"
+    },
+    "color_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Preferred colors"
+    },
+    "answers": {
+      "type": "object",
+      "description": "Quiz answers"
+    },
+    "style_description": {
+      "type": "string",
+      "description": "AI-generated style description"
+    }
+  },
+  "required": [
+    "primary_style"
+  ]
+}
